@@ -3,10 +3,18 @@
 Имя Атрибута, Тип PG, Ограничения (Constraints).
 Все эти данные хранятся как данные специальных встроенных таблиц Postgres.
 
-## Constraints
+##
 
-Default - Значение
-CHECK   - Проверка сложная
+Значения по умолчанию
+
+```
+CREATE TABLE "Table" (t int default 1);
+
+
+```
+
+
+## Constraints
 ```
 create table test (
   value numeric(1) check (value >= 1)
@@ -19,7 +27,11 @@ create table test (
 
 ```
 
-NOT NULL
+```sql
+
+CREATE table baz ( value int NOT NULL);
+
+```
 
 ## Unique
 
